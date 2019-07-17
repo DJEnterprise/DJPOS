@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+      
+  <!--    <item android:id="@+id/action_customername"
+          
+          android:title=""
+          android:showAsAction="ifRoom" /> -->
+     
+     
+    <item android:id="@+id/action_linkcustomer"
+          android:icon="@drawable/ic_action_add_person"
+          android:title="@string/link_customer"
+          android:showAsAction="ifRoom" />
+      
+      <item android:id="@+id/action_barcodescan"
+          android:icon="@drawable/barcode"
+          android:title="@string/barcode_scan"
+          android:showAsAction="ifRoom" />
+      
+          <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

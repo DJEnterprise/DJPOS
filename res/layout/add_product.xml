@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/product_Layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="1">
+        <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/productID" android:padding="6.0dip" android:text="Product ID:" />
+
+            <EditText
+                android:id="@+id/productIDEdit"
+                android:hint="Product ID"
+                android:inputType="text|number"
+                android:padding="6.0dip"
+                android:singleLine="true"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </TableRow>
+        <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/prodDescLabel" android:padding="6.0dip" android:text="Product Desc:" />
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@+id/prodDescEdit" android:padding="6.0dip" android:hint="Prod Desc" android:singleLine="true" android:inputType="text" />
+        </TableRow>
+        
+         <TableRow>
+                        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/departmentLabel" android:padding="6.0dip" android:text="Department:" />
+      <Spinner
+        android:id="@+id/DepartmentChooser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         
+         android:prompt="@string/department_prompt"/>
+            </TableRow>
+            
+         <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/priceLabel" android:padding="6.0dip" android:text="Price:" />
+
+            <EditText
+                android:id="@+id/prodPriceEdit"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+                android:padding="6.0dip"
+                android:singleLine="true"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </TableRow>
+    </TableLayout>
+</ScrollView>

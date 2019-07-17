@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/customer_Layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="1">
+        <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/customerIDLabel" android:padding="6.0dip" android:text="Customer ID:" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/cusIDEdit" android:padding="6.0dip" android:text="" android:singleLine="true" android:inputType="text" />
+            
+        </TableRow>
+        <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/customerNameLabel" android:padding="6.0dip" android:text="Customer Name:" />
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@+id/cusNameEdit" android:padding="6.0dip" android:hint="Customer Name" android:singleLine="true" android:inputType="text" />
+        </TableRow>
+         <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/customerAddressLabel" android:padding="6.0dip" android:text="Customer Address:" />
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@+id/cusAddEdit" android:padding="6.0dip" android:hint="Customer Address" android:singleLine="true" android:inputType="text" />
+        </TableRow>
+         <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/customerCityLabel" android:padding="6.0dip" android:text="Customer City:" />
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@+id/cusCityEdit" android:padding="6.0dip" android:hint="Customer City" android:singleLine="true" android:inputType="text" />
+        </TableRow>
+         <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/customerZipCodeLabel" android:padding="6.0dip" android:text="Zip Code:" />
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@+id/cusZipEdit" android:padding="6.0dip" android:hint="Customer Zipcode" android:singleLine="true" android:inputType="text|number" />
+        </TableRow>
+         <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/customerEmailLabel" android:padding="6.0dip" android:text="Email ID:" />
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@+id/cusEmailEdit" android:padding="6.0dip" android:hint="Customer Email" android:singleLine="true" android:inputType="textEmailAddress" />
+        </TableRow>
+         <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/customerPhoneLabel" android:padding="6.0dip" android:text="Phone:" />
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@+id/cusPhoneEdit" android:padding="6.0dip" android:hint="Customer Phone" android:singleLine="true" android:inputType="text|number" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>

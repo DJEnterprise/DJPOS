@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/customerlink_Layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+   <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="1">
+        <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/customerLinkID" android:padding="6.0dip" android:text="Customer ID :" />
+
+          <EditText
+                android:id="@+id/customerIDLinkEdit"
+                android:hint="Customer ID"
+                android:inputType="text|number"
+               android:layout_height="fill_parent"
+               android:layout_width="fill_parent"/>
+
+        </TableRow>
+         </TableLayout>
+
+      
+</ScrollView>

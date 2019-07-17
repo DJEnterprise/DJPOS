@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/department_Layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="1">
+        <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/depnameLabel" android:padding="6.0dip" android:text="Department Name:" />
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@+id/depnameEdit" android:padding="6.0dip" android:hint="Department Name" android:singleLine="true" android:inputType="text" />
+        </TableRow>
+      <!--  <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/depdescLabel" android:padding="6.0dip" android:text="Department Desc:" />
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@+id/depdescEdit" android:padding="6.0dip" android:hint="Department Desc" android:singleLine="true" android:inputType="textEmailAddress" />
+        </TableRow> -->
+    </TableLayout>
+</ScrollView>

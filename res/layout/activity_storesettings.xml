@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_storesettings"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+   android:paddingBottom="8dp"
+   android:paddingRight="6dp">
+
+      <TextView
+          android:id="@+id/storeIDLabel"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          
+          android:layout_alignParentLeft="true"
+          android:layout_alignRight="@+id/storeADDLabel"
+          android:layout_gravity="left|center"
+          android:padding="6.0dip"
+          android:text="Store ID:"
+          android:textAppearance="?android:textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/storeIDEdit"
+               	android:layout_width="wrap_content"
+          		android:layout_height="wrap_content"
+                android:hint="Store ID"                
+                android:inputType="number"
+                android:padding="6.0dip"
+                android:singleLine="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_toRightOf="@id/storeIDLabel" />
+            
+              <TextView
+                  android:id="@+id/storeNameLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:layout_below="@+id/storeIDLabel"
+                  android:layout_gravity="left|center"
+                  android:layout_toLeftOf="@+id/storeIDEdit"
+                  android:padding="6.0dip"
+                  android:text="Store Name:"
+                  android:textAppearance="?android:textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/storeNameEdit"
+               	android:layout_width="wrap_content"
+          		android:layout_height="wrap_content"
+          		android:layout_alignBaseline="@+id/storeNameLabel"
+                android:layout_alignBottom="@+id/storeNameLabel"
+                android:layout_toRightOf="@+id/storeNameLabel"
+                android:hint="Store Name"                
+                android:inputType="text"
+                android:padding="6.0dip"
+                android:singleLine="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                 />
+
+            <TextView
+                android:id="@+id/storeADDLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/storeNameEdit"
+                android:padding="6.0dip"
+                android:text="Store Address:"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/storeADDEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/storeADDLabel"
+                android:layout_alignBottom="@+id/storeADDLabel"
+                android:layout_toRightOf="@+id/storeADDLabel"
+                android:ems="10"
+                android:hint="Store Address"
+                android:inputType="text"
+                android:padding="6.0dip"
+                android:singleLine="true"
+                android:textAppearance="?android:textAppearanceMedium" >
+
+                <requestFocus />
+            </EditText>
+			
+             <TextView
+                 android:id="@+id/storeCityLabel"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_below="@+id/storeADDEdit"
+                 android:layout_toLeftOf="@+id/storeADDEdit"
+                 android:padding="6.0dip"
+                 android:text="Store City:"
+                 android:textAppearance="?android:textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/storeCityEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/storeCityLabel"
+                android:layout_alignBottom="@+id/storeCityLabel"
+                android:layout_toRightOf="@+id/storeCityLabel"
+                android:ems="10"
+                android:hint="Store City"
+                android:inputType="text"
+                android:padding="6.0dip"
+                android:singleLine="true"
+                android:textAppearance="?android:textAppearanceMedium" >
+
+                <requestFocus />
+            </EditText>
+            
+              <TextView
+                 android:id="@+id/storeZipCodeLabel"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_below="@+id/storeCityEdit"
+                 android:layout_toLeftOf="@+id/storeCityEdit"
+                 android:padding="6.0dip"
+                 android:text="Zip Code:"
+                 android:textAppearance="?android:textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/storeZipCodeEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/storeZipCodeLabel"
+                android:layout_alignBottom="@+id/storeZipCodeLabel"
+                android:layout_toRightOf="@+id/storeZipCodeLabel"
+                android:ems="10"
+                android:hint="Zip Code"
+                android:inputType="text"
+                android:padding="6.0dip"
+                android:singleLine="true"
+                android:textAppearance="?android:textAppearanceMedium" >
+
+                <requestFocus />
+            </EditText>
+            
+             <TextView
+                 android:id="@+id/storeTelephoneLabel"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_below="@+id/storeZipCodeEdit"
+                 android:layout_toLeftOf="@+id/storeZipCodeEdit"
+                 android:padding="6.0dip"
+                 android:text="Telephone:"
+                 android:textAppearance="?android:textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/storeTelephoneEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/storeTelephoneLabel"
+                android:layout_alignBottom="@+id/storeTelephoneLabel"
+                android:layout_toRightOf="@+id/storeTelephoneLabel"
+                android:ems="10"
+                android:hint="Telephone"
+                android:inputType="number"
+                android:padding="6.0dip"
+                android:singleLine="true"
+                android:textAppearance="?android:textAppearanceMedium" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/button1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/storeNameEdit"
+                android:layout_below="@+id/storeTelephoneEdit"
+                android:text="Save"
+                android:onClick="insertStoreData" />
+
+</RelativeLayout>

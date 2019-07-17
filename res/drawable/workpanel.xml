@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/border_workpanelui"
+    android:shape="rectangle" >
+     <!-- use this for transparent -->
+   <!-- <solid android:color="#00000000" /> -->
+   <!-- use this for a background colour -->
+   <solid android:color="#FFFFFF" />
+   <stroke android:width="0.5dip" android:color="#5e0000" />
+	 <corners android:bottomRightRadius="0dp" android:bottomLeftRadius="0dp"
+     android:topLeftRadius="0dp" android:topRightRadius="0dp"/> 
+</shape>

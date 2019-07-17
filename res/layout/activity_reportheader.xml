@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+      style="@style/button_text"
+         >
+
+    <Button
+        android:id="@+id/button3"
+     	android:background="@drawable/red_button"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="62dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="200dp"
+        android:onClick="fetchReport"
+        android:text="Submit"
+         android:textColor="#ffffff"
+         android:textStyle="bold"
+        android:shadowColor="#666666"
+        android:shadowDx="2"
+    	android:shadowDy="2"
+    	android:shadowRadius="3"
+        android:textAlignment="center" 
+        />
+
+    <Button
+        android:id="@+id/button2"
+    	android:background="@drawable/red_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="82dp"
+        android:onClick="selectToDate"
+       
+        android:textColor="#ffffff"
+         android:textStyle="bold"
+        android:text="To Date"
+        android:shadowColor="#666666"
+        android:shadowDx="2"
+    	android:shadowDy="2"
+    	android:shadowRadius="3"
+        android:textAlignment="center" 
+         />
+
+    <Button
+        android:id="@+id/button1"
+      	android:background="@drawable/red_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button2"
+       	 android:textColor="#ffffff"
+         android:textStyle="bold"
+         android:layout_marginLeft="82dp"
+        android:layout_marginTop="15dp"
+        android:onClick="selectDate"
+       
+       
+        android:text="From Date"
+        android:shadowColor="#666666"
+        android:shadowDx="2"
+    	android:shadowDy="2"
+    	android:shadowRadius="3"
+        android:textAlignment="center" 
+        />
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/button1"
+        android:ems="10" />
+
+     <TextView
+         android:id="@+id/ToDate"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/button2"
+         android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="200dp"
+         android:ems="10" />
+
+</RelativeLayout>

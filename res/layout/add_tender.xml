@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/tender_Layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="1">
+        <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/tendertransAmountLabel" android:padding="6.0dip" android:text="Transaction Amount:" />
+			
+            <TextView android:textAppearance="?android:textAppearanceMedium"  android:id="@+id/tendertransAmount" android:padding="6.0dip" android:text="500" />
+            
+           
+
+        </TableRow>
+        <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/tenderAmountLabel" android:padding="6.0dip" android:text="Tender Amount:" />
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@+id/tenderAmountEdit"  android:layout_gravity="left|center" android:padding="6.0dip" android:hint="Tender Amount" android:singleLine="true" android:inputType="numberDecimal" />
+        </TableRow>
+        <TableRow>
+                        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/tenderTypeLabel" android:padding="6.0dip" android:text="Tender Type:" />
+      <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:entries="@array/tender_array"
+         android:prompt="@string/tender_prompt"/>
+            </TableRow>
+    </TableLayout>
+</ScrollView>

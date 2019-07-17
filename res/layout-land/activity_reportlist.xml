@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_reportList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/reportList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/drawable" >
+    </ListView>
+
+     <RelativeLayout
+         android:id="@+id/totalSalesAmountLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/reportList"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="16dp"
+         android:layout_marginRight="19dp"
+         android:background="@drawable/drawable"
+         android:gravity="bottom"
+         android:orientation="horizontal" >
+
+         <TextView
+             android:id="@+id/totalSalesAmountLabel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_marginRight="43dp"
+             android:layout_toLeftOf="@+id/totalSalesAmount"
+             android:paddingRight="10dp"
+             android:text="@string/totalSalesAmount_Label"
+             android:textColor="#000000" />
+
+         <TextView
+             android:id="@+id/totalSalesAmount"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginRight="82dp"
+             android:paddingRight="10dp"
+             android:textColor="#000000" />
+     </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/customershow_Layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+   <TableLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="1">
+        <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/customerIDShow" android:padding="6.0dip" android:text="Customer ID :" />
+
+        <TextView android:textAppearance="?android:textAppearanceMedium" 
+            android:layout_gravity="left|center" 
+            android:id="@+id/customerIDDisplay" 
+            android:padding="6.0dip" 
+            android:text="" />
+
+        </TableRow>
+         <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/customerNameShow" android:padding="6.0dip" android:text="Customer Name :" />
+
+        <TextView android:textAppearance="?android:textAppearanceMedium" 
+            android:layout_gravity="left|center" 
+            android:id="@+id/customerNameDisplay" 
+            android:padding="6.0dip" 
+            android:text="" />
+
+        </TableRow>
+         <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/customerAddressShow" android:padding="6.0dip" android:text="Address :" />
+
+        <TextView android:textAppearance="?android:textAppearanceMedium" 
+            android:layout_gravity="left|center" 
+            android:id="@+id/customerAddressDisplay" 
+            android:padding="6.0dip" 
+            android:text="" />
+
+        </TableRow>
+         <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/customerCityShow" android:padding="6.0dip" android:text="City :" />
+
+        <TextView android:textAppearance="?android:textAppearanceMedium" 
+            android:layout_gravity="left|center" 
+            android:id="@+id/customerCityDisplay" 
+            android:padding="6.0dip" 
+            android:text="" />
+
+        </TableRow>
+         <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/customerZipShow" android:padding="6.0dip" android:text="Zipcode :" />
+
+        <TextView android:textAppearance="?android:textAppearanceMedium" 
+            android:layout_gravity="left|center" 
+            android:id="@+id/customerZipDisplay" 
+            android:padding="6.0dip" 
+            android:text="" />
+
+        </TableRow>
+         <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/customerPhoneShow" android:padding="6.0dip" android:text="Phone :" />
+
+        <TextView android:textAppearance="?android:textAppearanceMedium" 
+            android:layout_gravity="left|center" 
+            android:id="@+id/customerPhoneDisplay" 
+            android:padding="6.0dip" 
+            android:text="" />
+
+        </TableRow>
+           <TableRow>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="left|center" android:id="@+id/customerEmailShow" android:padding="6.0dip" android:text="Email :" />
+
+        <TextView android:textAppearance="?android:textAppearanceMedium" 
+            android:layout_gravity="left|center" 
+            android:id="@+id/customerEmailDisplay" 
+            android:padding="6.0dip" 
+            android:text="" />
+
+        </TableRow>
+         </TableLayout>
+
+      
+</ScrollView>

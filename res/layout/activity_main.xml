@@ -1,0 +1,251 @@
+<!--
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+</RelativeLayout> -->
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+  <!--  <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+  
+        <EditText
+        android:id="@+id/scan_item"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+		android:hint="@string/scan_item" >
+
+    </EditText>
+        
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:onClick="sendMessage"
+        
+        android:text="@string/button_completesale" />
+    
+    
+         </FrameLayout>  -->
+         
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/edit_button"
+		android:hint="@string/scan_item" >
+
+    </EditText>
+
+    <Button
+         android:id="@+id/edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+        android:layout_alignParentRight="true" 
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:onClick="searchItem"
+       
+        android:background="@drawable/add"
+        android:textColor="#666666"
+        android:textStyle="bold"
+        android:shadowColor="#666666"
+        android:shadowDx="2"
+    	android:shadowDy="2"
+    	android:shadowRadius="3"
+        android:textAlignment="center" 
+        android:typeface="monospace" />
+
+    <RelativeLayout
+        android:id="@+id/cancel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_button"
+        android:gravity="bottom"
+        android:layout_marginBottom="65dp"
+        android:orientation="horizontal"
+        
+        >
+    
+        
+
+     <ListView
+         android:id="@+id/listView1"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="20dp"
+         android:layout_marginBottom="10dp"
+         android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+         
+         android:background="@drawable/workpanel" 
+         >
+   
+   	
+     </ListView>
+	
+   
+        
+   
+        
+        
+	 <!--  <Button
+        android:id="@+id/edit_total"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="14dp"
+        android:textAlignment="4"
+        android:gravity="bottom"
+        android:onClick="searchItem"
+        android:text="@string/button_enter" 
+        /> -->
+    
+    </RelativeLayout>
+    
+   
+    
+   <RelativeLayout
+        android:id="@+id/completesale_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp"
+           android:layout_marginBottom="2dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        >
+	  <Button
+        android:id="@+id/edit_cancel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="14dp"
+      
+        android:gravity="center"
+        android:onClick="cancelSale"
+     
+        android:background="@drawable/cancelsale2"
+        android:textColor="#666666"
+        android:textStyle="bold"
+        android:shadowColor="#666666"
+        android:shadowDx="2"
+    	android:shadowDy="2"
+    	android:shadowRadius="3"
+        android:textAlignment="center" 
+        android:typeface="monospace"
+        />
+	     
+	  
+	  
+	    <RelativeLayout
+        android:id="@+id/total_layout"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp"
+           android:layout_marginBottom="2dp"
+               android:layout_toRightOf="@id/edit_cancel"
+        android:gravity="center"
+        android:orientation="horizontal"
+        
+        >
+            <TextView android:textAppearance="?android:textAppearanceMedium" 
+                android:id="@+id/TotalLabel" android:layout_width="120dp"
+        android:layout_height="wrap_content" android:gravity="center"
+                                     
+               
+         
+         
+                 android:text="Total:" />
+                     <TextView android:textAppearance="?android:textAppearanceMedium" 
+                          android:id="@+id/Total" android:layout_width="120dp" android:gravity="center"
+        android:layout_height="wrap_content"
+                         android:layout_toRightOf="@id/TotalLabel" android:text="0.00" />
+                     
+                      <TextView android:textAppearance="?android:textAppearanceMedium" 
+                android:id="@+id/TaxLabel" android:layout_width="120dp" 
+        android:layout_height="wrap_content" android:gravity="center"  android:layout_below="@id/Total"
+                                     
+               
+         
+         
+                 android:text="Tax:" />
+                     <TextView android:textAppearance="?android:textAppearanceMedium" 
+                          android:id="@+id/TaxTotal" android:layout_width="120dp" android:gravity="center"
+        android:layout_height="wrap_content"
+                         android:layout_toRightOf="@id/TaxLabel"  android:layout_below="@id/Total" android:text="0.00" />
+      </RelativeLayout>
+        <Button
+        android:id="@+id/edit_completesale"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+      
+        
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="14dp"
+        android:layout_toRightOf="@+id/total_layout"
+        android:gravity="center"
+        android:onClick="completeSale"
+        
+        android:background="@drawable/money"
+        android:textColor="#666666"
+        android:textStyle="bold"
+        android:shadowColor="#666666"
+        android:shadowDx="2"
+    	android:shadowDy="2"
+    	android:shadowRadius="3"
+        android:textAlignment="center" 
+        android:typeface="monospace"/>
+   
+    </RelativeLayout>
+
+    </RelativeLayout>
+    
+    <!-- The navigation drawer -->
+     <!-- should not be larger than 320 to show content -->
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:cacheColorHint="#000000"
+        android:dividerHeight="2dp"
+        android:background="#ffffff"/>
+</android.support.v4.widget.DrawerLayout> 
